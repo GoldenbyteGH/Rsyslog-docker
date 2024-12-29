@@ -2,6 +2,10 @@
 
 This repository contains a simple Docker Compose setup for deploying an Rsyslog server with Telegraf and InfluxDB.
 
+Rsyslog is a powerful logging system used for managing and forwarding log messages in a network.
+
+The initial concept dervied from here: https://nwmichl.net/2020/03/15/telegraf-influxdb-grafana-as-syslog-receiver/
+
 InfluxDB is used as a datasource for grafana.
 
 <details>
@@ -22,7 +26,13 @@ InfluxDB is used as a datasource for grafana.
     - Database: GOLDENBYTE-BUCKET
 </details>
 
+## Getting Started
 
-Rsyslog is a powerful logging system used for managing and forwarding log messages in a network.
 
-The initial concept dervied from here: https://nwmichl.net/2020/03/15/telegraf-influxdb-grafana-as-syslog-receiver/
+```bash
+git clone <repository-url>
+cd <repository-directory>
+docker compose up -d
+```
+
+
